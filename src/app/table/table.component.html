@@ -1,0 +1,38 @@
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Symbol</th>
+      <th scope="col">Market Cap</th>
+      <th scope="col">Price (USD)</th>
+      <th scope="col">Price (BTC)</th>
+      <th scope="col">Circulating Supply</th>
+      <th scope="col">Volume (24h)</th>
+      <th scope="col">% 1h</th>
+      <th scope="col">% 24h</th>
+      <th scope="col">% 7d</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    
+    <tr *ngFor="let curr of currency">
+      <th scope="row">{{ curr.rank }}</th>
+      <td>{{curr.name}}</td>
+      <td>{{curr.symbol}}</td>
+      <td>{{curr.market_cap_usd}}</td>
+      <td>{{curr.price_usd}}</td>
+      <td>{{curr.price_btc}} </td>
+      <td>{{curr.available_supply}} </td>
+      <td>{{curr.twh_volume_usd}} </td>
+      <td>{{curr.percent_change_1h}} </td>
+      <td>{{curr.percent_change_24h}}</td>
+      <td>{{curr.percent_change_7d}} </td>
+
+    </tr>
+    
+  </tbody>
+</table>
+</div>
