@@ -18,18 +18,18 @@
   <tbody>
    
     
-    <tr *ngFor="let curr of currency" [routerLink]="['/currdetail',curr.id]">
-      <th scope="row">{{ curr.rank }}</th>
-      <td>{{curr.name}}</td>
-      <td>{{curr.symbol}}</td>
-      <td>{{curr.market_cap_usd}}</td>
-      <td>{{curr.price_usd}}</td>
-      <td>{{curr.price_btc}} </td>
-      <td>{{curr.available_supply}} </td>
-      <td>{{curr['24h_volume_usd']}} </td>
-      <td>{{curr.percent_change_1h}} </td>
-      <td>{{curr.percent_change_24h}}</td>
-      <td>{{curr.percent_change_7d}} </td>
+    <tr *ngIf="curr">
+      <th scope="row">{{ curr[0].rank }}</th>
+      <td>{{curr[0].name}}</td>
+      <td>{{curr[0].symbol}}</td>
+      <td>{{curr[0].market_cap_usd}}</td>
+      <td>{{curr[0].price_usd}}</td>
+      <td>{{curr[0].price_btc}} </td>
+      <td>{{curr[0].available_supply}} </td>
+      <td>{{curr[0]['24h_volume_usd']}} </td>
+      <td>{{curr[0].percent_change_1h}} </td>
+      <td>{{curr[0].percent_change_24h}}</td>
+      <td>{{curr[0].percent_change_7d}} </td>
     </tr>
     
   </tbody>

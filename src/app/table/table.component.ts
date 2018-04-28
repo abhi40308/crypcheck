@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Currency } from '../shared/currency'
-
 import { CrypdataService } from '../crypdata.service'
 
 @Component({
@@ -11,12 +9,13 @@ import { CrypdataService } from '../crypdata.service'
 })
 export class TableComponent implements OnInit {
 
-  currency : Currency;
+  private currency=[];
 
   constructor( private crypdataservice: CrypdataService ) { }
 
   ngOnInit() {
   this.crypdataservice.getall().subscribe(data => this.currency = data);
   }
+
 
 }
