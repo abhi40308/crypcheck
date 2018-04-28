@@ -5,7 +5,7 @@ Cryptocurrencies real time price tracker.
 ### Features
 * Used bootstrap with angular2 
 * used coinmarketcap api
-* automatically refreshes data after 5 minutes
+* automatically updates data after 5 minutes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
