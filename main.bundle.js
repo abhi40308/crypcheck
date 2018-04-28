@@ -242,7 +242,7 @@ var CrypdataService = /** @class */ (function () {
 /***/ "./src/app/currdetail/currdetail.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".card{\n\tmargin-top: 50px;\n\tmargin-bottom: 90px;\n}"
+module.exports = ".card{\n\tmargin-top: 50px;\n\tmargin-bottom: 90px;\n}\n"
 
 /***/ }),
 
@@ -308,14 +308,14 @@ var CurrdetailComponent = /** @class */ (function () {
 /***/ "./src/app/footer/footer.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "p {\n\tpadding-top: 20px;\n\tcolor: white;\n\tfont-family: Lucidia sans-serif;\n}\n\n.body {\n\twidth: 100%;\n\tbackground: -webkit-gradient(linear, left top, right top, from(#1E1F20) ,color-stop(#4E4F4D), to(#1E1F20));\n\tbackground: linear-gradient(to right, #1E1F20 ,#4E4F4D, #1E1F20);\n\theight: 50px;\n\tbottom: 0px;\n}"
+module.exports = "p {\n\tpadding-top: 20px;\n\tcolor: white;\n\tfont-family: Lucidia sans-serif;\n}\n\n.body {\n\twidth: 100%;\n\tbackground: -webkit-gradient(linear, left top, right top, from(#1E1F20) ,color-stop(#4E4F4D), to(#1E1F20));\n\tbackground: linear-gradient(to right, #1E1F20 ,#4E4F4D, #1E1F20);\n}\n\n.icons a{\n\tfont-size: 25px;\n\tpadding-left: 3px;\n\tcolor: grey !important;\n}\n\n.icons a:hover {\n\tcolor: white !important;\n}"
 
 /***/ }),
 
 /***/ "./src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"body\">\n<p class=\"text-center\">\n  Copyright © {{year}} Abhijeet Singh\n</p>\n</div>"
+module.exports = "<div class=\"body\">\n<p class=\"text-center\">\n  Copyright © {{year}} Abhijeet Singh\n</p>\n\n<div class=\"row\" class=\"icons text-center\">\n\n         <a class=\"font\" href=\"https://www.linkedin.com/in/abhijeet-singh-khangarot-7a6792126/\" target=\"_blank\"><i class=\"fa fa-linkedin-square\"></i></a>\n\n        <a class=\"font git\" href=\"https://github.com/abhi40308\" target=\"_blank\"><i class=\"fa fa-github\"></i></a>\n\n        <a class=\"font gp\" href=\"https://plus.google.com/u/0/108829467037550076358\" target=\"_blank\"><i class=\"fa fa-google-plus-official\"></i></a>\n\n        <a class=\"font fb\" href=\"https://www.facebook.com/abhijeetsingh.khangarot\" target=\"_blank\"><i class=\"fa fa-facebook-square\"></i></a>\n\n        <a class=\"font tw\" href=\"https://twitter.com/abhi40308\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>\n\n        <a class=\"font q\" href=\"https://www.quora.com/profile/Abhijeet-Singh-676\" target=\"_blank\"><i class=\"fa fa-quora\"></i></a>\n</div>\n\n</div>"
 
 /***/ }),
 
@@ -449,7 +449,7 @@ var TableComponent = /** @class */ (function () {
         this.refreshData();
         this.interval = setInterval(function () {
             _this.refreshData();
-        }, 3000);
+        }, 300000);
     };
     TableComponent.prototype.refreshData = function () {
         this.crypdataservice.updateData();
