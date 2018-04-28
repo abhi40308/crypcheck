@@ -1,37 +1,22 @@
-<div class="table-responsive">
-<table class="table table-striped table-hover">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Symbol</th>
-      <th scope="col">Market Cap</th>
-      <th scope="col">Price (USD)</th>
-      <th scope="col">Price (BTC)</th>
-      <th scope="col">Circulating Supply</th>
-      <th scope="col">Volume (24h)</th>
-      <th scope="col">% 1h</th>
-      <th scope="col">% 24h</th>
-      <th scope="col">% 7d</th>
-    </tr>
-  </thead>
-  <tbody>
-   
-    
-    <tr *ngIf="curr">
-      <th scope="row">{{ curr[0].rank }}</th>
-      <td>{{curr[0].name}}</td>
-      <td>{{curr[0].symbol}}</td>
-      <td>{{curr[0].market_cap_usd}}</td>
-      <td>{{curr[0].price_usd}}</td>
-      <td>{{curr[0].price_btc}} </td>
-      <td>{{curr[0].available_supply}} </td>
-      <td>{{curr[0]['24h_volume_usd']}} </td>
-      <td>{{curr[0].percent_change_1h}} </td>
-      <td>{{curr[0].percent_change_24h}}</td>
-      <td>{{curr[0].percent_change_7d}} </td>
-    </tr>
-    
-  </tbody>
-</table>
+<div class="container">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{curr[0].name}}</h5>
+    <div class="card-text">
+      <div *ngIf="curr">
+      <p>Rank: {{ curr[0].rank }}</p>
+      <p>Symbol: {{curr[0].symbol}}</p>
+      <p>Market Cap(USD): {{curr[0].market_cap_usd}}</p>
+      <p>Price (USD): {{curr[0].price_usd}}</p>
+      <p>Price (BTC): {{curr[0].price_btc}} </p>
+      <p>Available Supply: {{curr[0].available_supply}} </p>
+      <p>24h volume: {{curr[0]['24h_volume_usd']}} </p>
+      <p>Percent Change 1h: {{curr[0].percent_change_1h}} </p>
+      <p>Percent change 24h: {{curr[0].percent_change_24h}}</p>
+      <p>Percent change 7d: {{curr[0].percent_change_7d}} </p>
+      </div>
+    </div>
+    <button md-button class="btn btn-primary" (click)="goBack()">BACK</button>
+  </div>
+</div>
 </div>

@@ -1,12 +1,17 @@
 h1 {
-	color: grey;
+	color: white;
+	margin-top: 0;
+	padding-top: 40px;
 	font-family: Lucidia sans-serif;
 }
 
 .body {
-	background-color: pink;
+	background: linear-gradient(to right, #1E1F20 ,#4E4F4D, #1E1F20);
+	height: 150px;
+
 }
 
 p {
-	color: grey;
+	color: white;
+	font-family: Lucidia sans-serif;
 }

@@ -1,3 +1,12 @@
 p {
-	background-color: pink;
+	padding-top: 20px;
+	color: white;
+	font-family: Lucidia sans-serif;
+}
+
+.body {
+	width: 100%;
+	background: linear-gradient(to right, #1E1F20 ,#4E4F4D, #1E1F20);
+	height: 50px;
+	bottom: 0px;
 }
