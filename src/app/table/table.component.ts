@@ -20,7 +20,7 @@ export class TableComponent implements OnInit {
   this.refreshData();
   this.interval = setInterval(() => { 
         this.refreshData(); 
-    }, 300000);
+    }, 3000);
   }
 
   refreshData(){
