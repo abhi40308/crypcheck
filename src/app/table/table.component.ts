@@ -9,7 +9,7 @@ import { CrypdataService } from '../crypdata.service'
 })
 export class TableComponent implements OnInit {
 
-  private currency=[];
+  public currency=[];
   private interval: any;
 
   constructor( private crypdataservice: CrypdataService ) { }
@@ -20,7 +20,7 @@ export class TableComponent implements OnInit {
   this.refreshData();
   this.interval = setInterval(() => { 
         this.refreshData(); 
-    }, 3000);
+    }, 300000);
   }
 
   refreshData(){

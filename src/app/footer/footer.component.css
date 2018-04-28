@@ -7,6 +7,15 @@ p {
 .body {
 	width: 100%;
 	background: linear-gradient(to right, #1E1F20 ,#4E4F4D, #1E1F20);
-	height: 50px;
-	bottom: 0px;
+}
+
+.icons a{
+	font-size: 25px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	color: grey !important;
+}
+
+.icons a:hover {
+	color: white !important;
 }

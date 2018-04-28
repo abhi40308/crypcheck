@@ -11,7 +11,7 @@ import { Location } from '@angular/common';
 })
 export class CurrdetailComponent implements OnInit {
 
-  private curr;
+  public curr;
 
   constructor(private crypdataservice: CrypdataService, private route: ActivatedRoute, private location: Location) { }
 
